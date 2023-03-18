@@ -1,0 +1,8 @@
+#!/bin/bash
+
+CFILE="example.c"
+ASMFILE="${CFILE%.c}.s"
+gcc -S -masm=intel -o "$ASMFILE" "$CFILE"
+sed -i '1i/*'"$ASMFILE"'*/' "$ASMFILE"
+indent -linux "$ASMFILE"
+
