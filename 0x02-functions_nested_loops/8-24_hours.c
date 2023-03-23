@@ -31,7 +31,7 @@ for (i = 0; i < 10; i++)
 	}
 	_putchar('\n');
 }
-}
+8-24_hours.c}
 
 
 
