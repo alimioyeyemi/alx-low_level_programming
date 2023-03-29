@@ -33,5 +33,6 @@ char *cap_string(char *str)
 
 		index++;
 	}
-	[200~return (str);
+
+	return (str);
 }
