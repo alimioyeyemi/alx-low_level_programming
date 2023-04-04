@@ -1,18 +1,19 @@
-i#include "main.h"
+#include "main.h"
 /**
- * @s: accept s
- * @accept: accept
- * Return: On success (0)
+ * _strpbrk - Entry point
+ * @s: input
+ * @accept: information
+ * Return: Always 0 (Success)
  */
 char *_strpbrk(char *s, char *accept)
 {
-		int i;
+		int k;
 
 		while (*s)
 		{
-			for (i = 0; accept[i]; i++)
+			for (k = 0; accept[k]; k++)
 			{
-			if (*s == accept[i])
+			if (*s == accept[k])
 			return (s);
 			}
 		s++;
